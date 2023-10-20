@@ -1,0 +1,14 @@
+opt all_hosts
+net a 172.20.100.0/24
+net b 172.31.0.0/16
+host foo env=prod
+nic a 172.20.100.1
+host bar env=dev "pretty_name=Bill's Dev Box"
+nic b 172.31.100.5
+host baz
+nic c 172.31.100.2 aws
+nic d 172.20.100.2 azure
+#show host foo
+#show host bar
+#show net
+#show root
